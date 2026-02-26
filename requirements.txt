@@ -17,4 +17,5 @@ python-dotenv
 requests
 urllib3
 yarl
+flask
 
