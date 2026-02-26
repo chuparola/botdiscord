@@ -8,6 +8,9 @@ from produtos import PRODUTOS
 from pix import criar_pix, verificar_pix
 from database import init_db, criar_pedido, listar_pendentes, atualizar_status
 
+from keep_alive import keep_alive
+keep_alive()
+
 load_dotenv()
 
 TOKEN = os.getenv("DISCORD_TOKEN")
@@ -221,5 +224,6 @@ async def on_command_error(ctx, error):
 
 
 bot.run(TOKEN)
+
 
 
