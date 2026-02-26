@@ -10,7 +10,7 @@ from database import init_db, criar_pedido, listar_pendentes, atualizar_status
 
 load_dotenv()
 
-TOKEN = 'MTQ3NjIxNDM2MzYzODczMDg1NA.GeS26M.TzV2ZpaDMl0H0jkHw8HDlXIYNouzBRJ0ZfGuv4'
+TOKEN = 'MTQ3NjIxNDM2MzYzODczMDg1NA.G-c3J-.ljU4gGwmBrGLH30WUN6AfkK0kTJXkZCih-QuuE'
 CARGO_ID = 1476304982096482335
 GUILD_ID = 1475929306973732896
 
@@ -218,5 +218,6 @@ async def on_ready():
 @bot.event
 async def on_command_error(ctx, error):
     print(f"Erro comando: {error}")
+
 
 bot.run(TOKEN)
